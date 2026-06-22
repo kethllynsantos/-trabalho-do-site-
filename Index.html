@@ -1,147 +1,141 @@
-!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cosmeticos</title>
-</head>
-<body>
-    /head>
-<body>
-    <h1><bem-vindos-a-BelaEssencia/h1>
-</p>Bem-vindo ao nosso mundo de beleza! 🌸
-Estamos muito felizes em ter você conosco em nossa loja online de cosméticos. Aqui, você encontrará produtos incríveis para cuidar da sua pele, cabelo e bem-estar
-. Nossa missão é trazer qualidade, inovação e, claro, muito amor para cada detalhe da sua rotina de cuidados pessoais.
-Pagamento fácil e seguro: escolha entre cartão de crédito, débito, boleto ou parcelamento. Tudo rápido e sem complicação.
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bella Essência</title>
+
   <style>
     body {
-      font-family: Arial;
-      background-color: #f3b3b31e;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
     }
+
     header {
-      background-color: #530707f3;
+      background-color: #be9b8d;
       color: white;
-      padding: 15px;
       text-align: center;
-      font-size: 24px;
-    }!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cosmeticos</title>
-</head>
-<body>
-    .produto {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin: 15px;
-      border-radius: 10px;
+      padding: 20px;
     }
-    button {
-      background-color: rgba(97, 21, 21, 0.856);
-      color: white;
+
+    .container {
+      display: flex;
+      min-height: 60vh;
+    }
+
+    .esquerda {
+      flex: 1;
+      padding: 20px;
+      background-color: #b7cfe6;
+    }
+
+    .direita {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 300px;
+    }
+
+    input, button {
       padding: 10px;
-      border: none;
-      cursor: pointer;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .produto {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
     }
   </style>
 </head>
+
 <body>
 
-<header>✧˚.🎀⋆Bella Essência</header>
+<header>
+  <h1>Bella Essência</h1>
+  <p>Bem-vindo ao nosso mundo de beleza</p>
+</header>
 
-<div class="produto">
-  <h2>Batom Matte Luxo</h2>
-  <p>R$ 29,90</p>
-  <button onclick="comprar()">Comprar</button>
+<!-- CADASTRO -->
+<div class="container">
+
+  <div class="esquerda">
+    <h2>Sobre nós</h2>
+    <p>Produtos de beleza para pele, cabelo e bem-estar.</p>
+  </div>
+
+  <div class="direita">
+    <h2>Cadastro</h2>
+
+    <form id="formCadastro">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
 </div>
 
-<div class="produto">
-  <h2>Perfume Egeo Dolce</h2>
-  <p>R$ 160,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
+<!-- PRODUTOS -->
+<section class="produtos">
 
-<div class="produto">
-  <h2>Perfume Egeo spicy vibe</h2>
-  <p>R$ 170,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
+  <div class="produto">
+    <h3>Batom Matte Luxo</h3>
+    <p>R$ 29,90</p>
+    <button onclick="comprar()">Comprar</button>
+  </div>
 
-<div class="produto">
-  <h2>Perfume Feminino Elegance</h2>
-  <p>R$ 89,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
+  <div class="produto">
+    <h3>Perfume Egeo Dolce</h3>
+    <p>R$ 160,90</p>
+    <button onclick="comprar()">Comprar</button>
+  </div>
 
-<div class="produto">
-  <h2>Perfume florata</h2>
-  <p>R$ 175,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
+  <div class="produto">
+    <h3>Sauvage Dior</h3>
+    <p>R$ 751,90</p>
+    <button onclick="comprar()">Comprar</button>
+  </div>
 
-<div class="produto">
-  <h2>malbec gold</h2>
-  <p>R$ 185,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2> Egeo Choc</h2>
-  <p>R$ 175,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Gloos acido</h2>
-  <p>R$ 20,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Gloos franciny</h2>
-  <p>R$ 35,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Gloos franciny</h2>
-  <p>R$ 35,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Gloos franciny</h2>
-  <p>R$ 35,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Sauvage Dior</h2>
-  <p>R$ 751,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
-
-<div class="produto">
-  <h2>Invictus Paco Rabanne</h2>
-  <p>R$ 509,90</p>
-  <button onclick="comprar()">Comprar</button>
-</div>
+</section>
 
 <script>
+document.getElementById("formCadastro").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+
+  localStorage.setItem("usuario", nome);
+
+  alert("Cadastro realizado com sucesso!");
+});
+
 function comprar() {
-  window.location.href = "https://wa.me/55(44)998906149?text=Quero%20comprar%20na%20Bella%20Essência";
+  window.location.href =
+    "https://wa.me/5544998906149?text=Quero%20comprar%20na%20Bella%20Essência";
 }
 </script>
 
 </body>
 </html>
-
-<
