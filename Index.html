@@ -1,120 +1,26 @@
+
+</html>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bella Essência</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f0f8ff;
-    }
-
-    header {
-      background: #be9b8d;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-
-    .produto {
-      background: white;
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    .produto img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    button {
-      background: #332e20;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #8a6b47;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Portal de Estudos</title>
 </head>
 
 <body>
 
-<header>
-  <h1>💄 Bella Essência</h1>
-  <p>Os melhores cosméticos para você</p>
-</header>
+    <h1>Portal de Estudos</h1>
 
-<section class="produtos">
+    <h2 id="titulo">Área do Aluno</h2>
 
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Batom">
-    <h3>Batom Matte Luxo</h3>
-    <p>R$ 29,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
+    <section aria-labelledby="titulo">
+        <p>Bem-vindo ao seu espaço de estudos. Acesse o sistema para continuar.</p>
 
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1612810436541-336d2e3c0c3f" alt="Perfume">
-    <h3>Perfume Egeo Dolce</h3>
-    <p>R$ 160,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Perfume Dior">
-    <h3>Sauvage Dior</h3>
-    <p>R$ 751,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e" alt="Perfume feminino">
-    <h3>Perfume Feminino Elegante</h3>
-    <p>R$ 89,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be" alt="Gloss">
-    <h3>Gloss Ácido</h3>
-    <p>R$ 20,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://images.unsplash.com/photo-1616683693504-3ea7e4c4a1b2" alt="Perfume masculino">
-    <h3>Malbec Gold</h3>
-    <p>R$ 185,90</p>
-    <button onclick="comprar()">Comprar</button>
-  </div>
-
-</section>
-
-<script>
-function comprar() {
-  window.location.href =
-    "https://wa.me/5544998906149?text=Quero%20comprar%20na%20Bella%20Essência";
-}
-</script>
+        <button>
+            <span aria-hidden="true">📚</span>
+            Entrar no portal
+        </button>
+    </section>
 
 </body>
 </html>
